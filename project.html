@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        header h1 a {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        .nav-bar {
+            background: #fff;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .nav-bar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .nav-bar ul li {
+            margin: 0 20px;
+        }
+        .nav-bar ul li a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-bar ul li a:hover {
+            color: #764ba2;
+        }
+        .hero {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://via.placeholder.com/1920x600?text=E-Shop+Banner') no-repeat center/cover;
+            opacity: 0.3;
+            z-index: 1;
+        }
+        .hero > * {
+            position: relative;
+            z-index: 2;
+        }
+        .hero .logo {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .products {
+            padding: 50px 20px;
+            background: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .product {
+            background: #f9f9f9;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product h3 {
+            padding: 15px;
+            margin: 0;
+            font-size: 1.5em;
+            color: #667eea;
+        }
+        .product p {
+            padding: 0 15px;
+            font-size: 1.2em;
+            color: #764ba2;
+            font-weight: bold;
+        }
+        .product button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .product button:hover {
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="project.html">E-Shop</a></h1>
+    </header>
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="project.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+            <div class="logo">🛒 E-Shop</div>
+            <h2>Welcome to Our E-Commerce Store</h2>
+            <p>Find the best products at great prices!</p>
+        </section>
+    <section class="products">
+        <div class="product">
+        <img src="varun-gaba-dcgB3CgidlU-unsplash.jpg" alt="Product 1">
+            <h3>CAMERA</h3>
+            <p>₹1,99,900</p>
+            <button onclick="alert('Added to cart!')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="sara-groblechner-h10-NImYZHs-unsplash.jpg" alt="Product 2">
+            <h3>WOOD DESIGNED BOTTLE</h3>
+            <p>₹2900</p>
+            <button onclick="alert('Added to cart!')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="haziq-jb-71_GA1KBf_8-unsplash.jpg" alt="Product 3">
+            <h3>CLASSIC WATCH</h3>
+            <p>₹39,900</p>
+            <button onclick="alert('Added to cart!')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="giorgio-trovato-0CZwuZhiC84-unsplash.jpg" alt="Product 4">
+            <h3>MINI REALISTIC CAR</h3>
+            <p>₹49,900</p>
+            <button onclick="alert('Added to cart!')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="george-kroeker-96bacP6Vba8-unsplash.jpg" alt="Product 5">
+            <h3>DRONE</h3>
+            <p>₹59,990</p>
+            <button onclick="alert('Added to cart!')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="alexander-rotker-l8p1aWZqHvE-unsplash.jpg" alt="Product 6">
+            <h3>SNEAKER</h3>
+            <p>₹6900</p>
+            <button onclick="alert('Added to cart!')">Add to Cart</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 E-Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
