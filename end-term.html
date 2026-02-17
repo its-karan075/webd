@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .product {
+            background: white;
+            width: 260px;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+        
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .price {
+            font-size: 20px;
+            color: #2e7d32;
+            font-weight: bold;
+        }
+        
+        .strike {
+            color: gray;
+            text-decoration: line-through;
+            margin-left: 8px;
+            font-size: 14px;
+        }
+        
+        .buttons {
+            margin-top: 15px;
+        }
+        
+        button {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 5px;
+        }
+        
+        .cart {
+            background: #1976d2;
+            color: white;
+        }
+        
+        .buy {
+            background: #ff5722;
+            color: white;
+        }
+        
+        button:hover {
+            opacity: 0.85;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="product">
+        <div class="title">Urban Cotton T-Shirt</div>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIoc7dyQAGl5uD1ztYSxUTj_T8waw5PwA21zdenYzG3PrBPlInjBGdKTo&s" alt="Tshirt">
+
+        <div class="price">
+            ₹1599
+            <span class="strike">₹1999</span>
+        </div>
+
+        <div class="buttons">
+            <button class="cart">ADD TO CART</button>
+            <button class="buy">BUY NOW</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
